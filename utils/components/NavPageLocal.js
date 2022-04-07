@@ -18,6 +18,16 @@ const bleepsSettings = {
 };
 const generalAnimator = { duration: { enter: 200, exit: 200 } };
 
+const coords = {
+    0: 'A',
+    1: 'B',
+    2: 'C',
+    3: 'D',
+    4: 'E',
+    5: 'F',
+    6: 'G'
+}
+
 export default function NavPanelLocal(props){
     return (
         <ArwesThemeProvider>
@@ -110,8 +120,8 @@ export default function NavPanelLocal(props){
                                         : 
                                         null
                                     ))}
-                                <p style={{position: 'absolute', top: '17.5vh', right: '18.5vw'}}>🔷</p>
-                                <p style={{position: 'absolute', top: '34.5vh'}}>SCANNING SECTOR <LoadingBars size={0.5} animator={{ activate: true }} /></p>
+                                <p style={{position: 'absolute', top: '15.5vh', right: '18.5vw'}}>🔷</p>
+                                <p style={{position: 'absolute', top: '34.5vh'}}>SCANNING SECTOR {coords[props.sf1.location.y]}{props.sf1.location.x} <LoadingBars size={0.5} animator={{ activate: true }} /></p>
                             </FrameCorners>
                         </div>
                     </div>
