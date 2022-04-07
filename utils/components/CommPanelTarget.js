@@ -49,7 +49,7 @@ export default function CommPanelTarget(props){
                                 {props.sf1.target != null ? 
                                     props.sf1.target.icon == '🛰️' ? 
                                         <center>
-                                            <Button FrameComponent={FrameCorners}>Ask permission to land</Button>
+                                            <Button FrameComponent={FrameCorners}>Ask permission to dock</Button>
                                             <br/><br/>
                                             <Button FrameComponent={FrameCorners}>Ask for reinforcements</Button>
                                         </center>
