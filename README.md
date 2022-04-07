@@ -1,1 +1,1 @@
-Project ARMADA is a spaceship simulator made with React, Next and Arwes.
+Project ARMADA is a futuristic spaceship simulator made with React, Next and Arwes.
